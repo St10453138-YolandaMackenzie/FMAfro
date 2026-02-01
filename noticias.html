@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FM Afro — Notícias</title>
+  <meta name="description" content="Fica a par das últimas notícias e novidades sobre a FM Afro. Música, cultura e muito mais na tua rádio favorita." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./app.js" defer></script>
+
+</head>
+<body>
+
+<!-- TOP INFO BAR -->
+<div class="top-info-bar">
+  <div class="container top-info-inner">
+    <div class="info-item"><a href="tel:+244921997205">921 997 205</a></div>
+    <div class="info-item">
+      <a href="mailto:fmafro.comercial@iguanalda.com">fmafro.comercial@iguanalda.com</a>
+    </div>
+    <div class="info-item"><span>Seg–Sáb, 08h00 – 18h00</span></div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="FM Afro Home">
+      <img src="./assets/Logo.png" alt="FM Afro Logo" class="brand-logo">
+      <span class="brand-name">FM AFRO</span>
+    </a>
+
+    <nav class="nav" aria-label="Menu principal">
+      <a class="nav-link" href="index.html">Início</a>
+      <a class="nav-link" href="sobre.html">Sobre Nós</a>
+      <a class="nav-link" href="programas.html">Programas</a>
+      <a class="nav-link" href="eventos.html">Eventos</a>
+      <a class="nav-link active" href="noticias.html">Notícias</a>
+      <a class="nav-link pill" href="contactos.html">Contactos</a>
+    </nav>
+
+    <button class="burger" type="button" aria-label="Abrir menu" aria-expanded="false" data-burger>
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-nav" data-mobile-nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre Nós</a>
+    <a href="programas.html">Programas</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="noticias.html">Notícias</a>
+    <a href="contactos.html">Contactos</a>
+    <a href="ouvir.html">Rádio Ao Vivo</a>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main class="site-main container page">
+
+  <h1 class="h1">Notícias</h1>
+  <p class="sub">
+    Atualizações, música, cultura e tudo o que acontece à volta da FM Afro.
+  </p>
+<img class="heroImg" src="assets/Media.jpg" alt="" onerror="this.style.display='none'">
+
+  <!-- FILTER TABS -->
+  <div class="tabs" role="tablist" aria-label="Categorias de notícias">
+    <button class="tab active" type="button" data-news-filter="Todas">Todas</button>
+    <button class="tab" type="button" data-news-filter="Música">Música</button>
+    <button class="tab" type="button" data-news-filter="Artistas">Artistas</button>
+    <button class="tab" type="button" data-news-filter="Cultura">Cultura</button>
+    <button class="tab" type="button" data-news-filter="FM Afro">FM Afro</button>
+    <button class="tab" type="button" data-news-filter="Comunidade">Comunidade</button>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- FEATURED -->
+  <h2 class="h2">Em <span class="accent">Destaque</span></h2>
+  <section class="grid grid-2 mt" id="featured-news"></section>
+
+  <div class="divider"></div>
+
+  <!-- ALL NEWS -->
+  <h2 class="h2">Últimas <span class="accent">Notícias</span></h2>
+  <section class="grid grid-3 mt" id="news-grid"></section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-top">
+
+    <div class="footer-brand">
+      <img src="./assets/Logo.png" alt="FM Afro Logo" class="footer-logo">
+      <span class="footer-name">FM AFRO 103.3</span>
+    </div>
+
+    <div class="footer-links">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="programas.html">Programas</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="contactos.html">Contactos</a>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://www.instagram.com/fmafro/" aria-label="Instagram">IG</a>
+      <a href="https://www.facebook.com/FMAfro/" aria-label="Facebook">FB</a>
+      <a href="https://www.tiktok.com/@fmafro" aria-label="TikTok">TT</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      © FM Afro 103.3 <span id="year"></span> | Política de Privacidade | Termos & Condições
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal" data-modal aria-hidden="true">
+  <div class="modalCard" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modalClose" type="button" data-modal-close aria-label="Fechar">×</button>
+    <h2 class="h2" id="modalTitle">Detalhes</h2>
+    <div class="modalBody" data-modal-body></div>
+  </div>
+</div>
+
+</body>
+</html>

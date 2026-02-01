@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FM Afro — Rádio Ao Vivo</title>
+<meta name="description" content="Ouve a FM Afro em direto, onde quer que estejas. Música afro, cultura e muito mais na tua rádio favorita." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+<script src="app.js"></script>
+
+</head>
+<body>
+
+  <!-- TOP INFO BAR -->
+<div class="top-info-bar">
+  <div class="container top-info-inner">
+
+    <div class="info-item">
+  <a href="tel:+244921997205">921 997 205</a>
+</div>
+
+<div class="info-item">
+  <a href="mailto:fmafro.comercial@iguanalda.com">
+    fmafro.comercial@iguanalda.com
+  </a>
+</div>
+
+
+    <div class="info-item">
+      <span>Seg–Sáb, 08h00 – 18h00</span>
+    </div>
+
+  </div>
+</div>
+<!-- END TOP INFO BAR -->
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="FM Afro Home">
+  <img src="./assets/Logo.png" alt="FM Afro Logo" class="brand-logo">
+  <span class="brand-name">FM AFRO</span>
+</a>
+
+    </a>
+
+    <nav class="nav" aria-label="Menu principal">
+      <a class="nav-link" href="index.html">Início</a>
+      <a class="nav-link" href="sobre.html">Sobre Nós</a>
+      <a class="nav-link" href="programas.html">Programas</a>
+      <a class="nav-link" href="eventos.html">Eventos</a>
+      <a class="nav-link" href="noticias.html">Notícias</a>
+      <a class="nav-link pill" href="contactos.html">Contactos</a>
+    </nav>
+
+    <button class="burger" type="button" aria-label="Abrir menu" data-burger>
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-nav" data-mobile-nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre Nós</a>
+    <a href="programas.html">Programas</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="noticias.html">Notícias</a>
+    <a href="contactos.html">Contactos</a>
+    <a href="ouvir.html">Rádio Ao Vivo</a>
+  </div>
+</header>
+
+<main class="site-main container page">
+  <h1 class="h1">Rádio <span class="accent">Ao Vivo</span></h1>
+  <p class="sub">Página simples de escuta — preparada para integrar um stream real quando estiver disponível.</p>
+
+  <div class="divider"></div>
+
+  <div class="card pad yellow">
+    <div class="player">
+      <button class="play" type="button" data-play aria-label="Play/Pause">▶</button>
+      <div>
+        <div class="player-title">FM Afro — Ao Vivo</div>
+        <div class="player-sub">Neste protótipo o stream está em branco</div>
+      </div>
+      <a class="btn secondary" href="contactos.html">Contactar</a>
+    </div>
+
+    <p class="note mt">
+      *Quando tiveres um link real (MP3/HLS), basta colocar no <code>assets/js/app.js</code> no campo <code>STREAM_URL</code>.
+    </p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+
+  <div class="footer-brand">
+    <img src="./assets/Logo.png" alt="FM Afro Logo" class="footer-logo">
+    <span class="footer-name">FM AFRO 103.3</span>
+  </div>
+
+  <div class="footer-links">
+
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="programas.html">Programas</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="contactos.html">Contactos</a>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://www.instagram.com/fmafro/" aria-label="Instagram">IG</a>
+      <a href="https://www.facebook.com/FMAfro/" aria-label="Facebook">FB</a>
+      <a href="https://www.tiktok.com/@fmafro" aria-label="TikTok">TT</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">© FM Afro 103.3 <span id="year"></span> | Política de Privacidade | Termos & Condições</div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

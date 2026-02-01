@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FM Afro — Início</title>
+  <meta name="description" content="Bem-vindo à FM Afro 103.3! A tua rádio de música afro, cultura e entretenimento em Angola. Sintoniza-nos para os melhores hits, programas e eventos." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./app.js" defer></script>
+</head>
+<body>
+
+  <!-- TOP INFO BAR -->
+  <div class="top-info-bar">
+    <div class="container top-info-inner">
+      <div class="info-item"><a href="tel:+244921997205">921 997 205</a></div>
+      <div class="info-item">
+        <a href="mailto:fmafro.comercial@iguanalda.com">fmafro.comercial@iguanalda.com</a>
+      </div>
+      <div class="info-item"><span>Seg–Sáb, 08h00 – 18h00</span></div>
+    </div>
+  </div>
+  <!-- END TOP INFO BAR -->
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="FM Afro Home">
+        <img src="./assets/Logo.png" alt="FM Afro Logo" class="brand-logo">
+        <span class="brand-name">FM AFRO</span>
+      </a>
+
+      <nav class="nav" aria-label="Menu principal">
+        <a class="nav-link" href="index.html">Início</a>
+        <a class="nav-link" href="sobre.html">Sobre Nós</a>
+        <a class="nav-link" href="programas.html">Programas</a>
+        <a class="nav-link" href="eventos.html">Eventos</a>
+        <a class="nav-link" href="noticias.html">Notícias</a>
+        <a class="nav-link pill" href="contactos.html">Contactos</a>
+      </nav>
+
+      <button class="burger" type="button" aria-label="Abrir menu" aria-expanded="false" data-burger>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" data-mobile-nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="programas.html">Programas</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="contactos.html">Contactos</a>
+      <a href="ouvir.html">Rádio Ao Vivo</a>
+    </div>
+  </header>
+
+  <main class="site-main container page">
+    <h1 class="h1">A Voz da Música <span class="accent">Afro</span></h1>
+    <p class="sub">Onde a música africana ganha vida, com ritmos, histórias e vozes que inspiram a nossa geração.</p>
+
+    <section class="zeno-strip" aria-label="Zeno e apps">
+      <div class="zeno-left">
+        <span class="zeno-logo">ZENO</span>
+      </div>
+
+      <div class="zeno-right">
+        <a class="store-badge"
+           href="https://apps.apple.com/us/app/zenoradio/id1207197757"
+           target="_blank" rel="noopener">
+          <span class="badge-small">Available on the</span>
+          <span class="badge-big">App Store</span>
+        </a>
+
+        <a class="store-badge"
+           href="https://play.google.com/store/apps/details?id=com.zenofm.player"
+           target="_blank" rel="noopener">
+          <span class="badge-small">Get it on</span>
+          <span class="badge-big">Google Play</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="radio-hero" aria-label="FM Afro player">
+      <div class="radio-hero-top">
+        <div class="radio-logo-box">
+          <img src="./assets/Logo.png" alt="FM Afro" class="radio-logo">
+        </div>
+
+        <div class="radio-hero-title">
+          <h2>FM Afro</h2>
+          <p>Ao Vivo • Música Afro • Cultura • Comunidade</p>
+        </div>
+      </div>
+
+      <div class="radio-player-bar">
+        <button class="radio-play" type="button" data-radio-play aria-label="Tocar / Pausar">▶</button>
+
+        <div class="radio-track">
+          <div class="track-title">FM Afro — Ao Vivo</div>
+          <div class="track-sub"><a href="https://zenoplay.zenomedia.com/s/W5tELO">Ouvir ao vivo</a></div>
+        </div>
+
+        <div class="radio-actions">
+          <button class="icon-btn" type="button" title="Volume" aria-label="Volume">🔊</button>
+          <a class="icon-btn" href="ouvir.html" title="Abrir página de rádio" aria-label="Abrir página de rádio">↗</a>
+        </div>
+      </div>
+
+      <audio data-radio-audio></audio>
+    </section>
+
+    <div class="mt" style="display:flex; gap:10px; flex-wrap:wrap">
+      <a class="btn" href="ouvir.html">Ouvir Rádio ao Vivo</a>
+      <a class="btn secondary" href="programas.html">Ver Programação</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- HITS DA SEMANA (YOUTUBE) -->
+    <section class="hits-section" aria-label="Hits da Semana">
+      <h2 class="hits-title">Hits da Semana</h2>
+
+      <div class="hits-grid">
+        <!-- Bonga -->
+        <article class="hit-card">
+          <div class="hit-img"><img src="./assets/Bonga.jpg" alt="Bonga"></div>
+          <div class="hit-meta">
+            <div class="hit-artist">Bonga</div>
+            <div class="hit-song">Mona Ki Ngi Xica</div>
+            <button class="hit-play" type="button"
+              data-hit-youtube
+              data-embed="https://www.youtube.com/embed/GjR7H-IytJQ"
+              aria-label="Tocar: Bonga - Mona Ki Ngi Xica">
+              <span class="eq" aria-hidden="true">||</span>
+              <span class="tri" aria-hidden="true"></span>
+              <span class="eq" aria-hidden="true">||</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Anna Joyce -->
+        <article class="hit-card">
+          <div class="hit-img"><img src="./assets/Anna%20Joyce.webp" alt="Anna Joyce"></div>
+          <div class="hit-meta">
+            <div class="hit-artist">Anna Joyce</div>
+            <div class="hit-song">Cama Vazia</div>
+            <button class="hit-play" type="button"
+              data-hit-youtube
+              data-embed="https://www.youtube.com/embed/iHsVuWd6hHw"
+              aria-label="Tocar: Anna Joyce - Cama Vazia">
+              <span class="eq" aria-hidden="true">||</span>
+              <span class="tri" aria-hidden="true"></span>
+              <span class="eq" aria-hidden="true">||</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Paulo Flores -->
+        <article class="hit-card">
+          <div class="hit-img"><img src="./assets/paulo-flores.jpg" alt="Paulo Flores"></div>
+          <div class="hit-meta">
+            <div class="hit-artist">Paulo Flores</div>
+            <div class="hit-song">Coisas da Terra</div>
+            <button class="hit-play" type="button"
+              data-hit-youtube
+              data-embed="https://www.youtube.com/embed/7_EfbiJr8xY"
+              aria-label="Tocar: Paulo Flores - Coisas da Terra">
+              <span class="eq" aria-hidden="true">||</span>
+              <span class="tri" aria-hidden="true"></span>
+              <span class="eq" aria-hidden="true">||</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Carlos Burity -->
+        <article class="hit-card">
+          <div class="hit-img"><img src="./assets/Carlos-burity.jpg" alt="Carlos Burity"></div>
+          <div class="hit-meta">
+            <div class="hit-artist">Carlos Burity</div>
+            <div class="hit-song">Paxi Yami</div>
+            <button class="hit-play" type="button"
+              data-hit-youtube
+              data-embed="https://www.youtube.com/embed/b112yU1ir94"
+              aria-label="Tocar: Carlos Burity - Paxi Yami">
+              <span class="eq" aria-hidden="true">||</span>
+              <span class="tri" aria-hidden="true"></span>
+              <span class="eq" aria-hidden="true">||</span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <div class="grid grid-2">
+      <div class="card pad yellow">
+        <h2 class="h2">Sobre a <span class="accent">FM Afro</span></h2>
+        <p class="sub">
+          A FM Afro é uma rádio jovem, moderna e culturalmente afirmativa, dedicada à música afro e à diáspora africana.
+        </p>
+        <a class="btn small mt" href="sobre.html">Saber Mais</a>
+      </div>
+
+      <div class="card pad yellow">
+        <h2 class="h2">Próximos <span class="accent">Eventos</span></h2>
+        <div class="grid" style="gap:12px" id="home-events"></div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h2 class="h2">Últimas <span class="accent">Notícias</span></h2>
+    <img src="./assets/On Air.jpg" alt="FM Afro Logo" class="center-image" height="800" width="600">
+
+    <div class="grid grid-3 mt" id="home-news"></div>
+
+    <!-- =========================
+   A CIDADE NÃO DORME 
+========================= -->
+<section class="section citySleeps" id="cidade-nao-dorme">
+  <h2 class="h1 cityTitle"><span class="accent">A CIDADE NÃO DORME</span></h2>
+  <div class="divider"></div>
+
+  <div class="citySlider" data-city-slider>
+   
+    <div class="cityTrack" data-city-track></div>
+
+    <!-- Next button -->
+    <button class="cityNext" type="button" data-city-next aria-label="Próximo">
+      <span aria-hidden="true">→</span>
+    </button>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <img src="./assets/Logo.png" alt="FM Afro Logo" class="footer-logo">
+        <span class="footer-name">FM AFRO 103.3</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre Nós</a>
+        <a href="programas.html">Programas</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="contactos.html">Contactos</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://www.instagram.com/fmafro/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        <a href="https://www.facebook.com/FMAfro/" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+        <a href="https://www.tiktok.com/@fmafro" target="_blank" rel="noopener" aria-label="TikTok">TT</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        © FM Afro 103.3 FM <span id="year"></span> |
+        <a href="privacidade.html">Política de Privacidade</a> |
+        <a href="termos.html">Termos & Condições</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal (used by YouTube hits + your other pages) -->
+  <div class="modal" data-modal aria-hidden="true">
+    <div class="modalCard" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modalClose" type="button" data-modal-close aria-label="Fechar">×</button>
+      <h2 class="h2" id="modalTitle">Detalhes</h2>
+      <div class="modalBody" data-modal-body></div>
+    </div>
+  </div>
+
+  <!-- COOKIE CONSENT BANNER -->
+  <div class="cookie-banner" id="cookieBanner" hidden>
+    <div class="cookie-inner container">
+      <div class="cookie-text">
+        <strong>Cookies</strong>
+        <span>
+          Usamos cookies para melhorar a experiência no site. Ao continuar, concordas com a nossa
+          <a href="privacidade.html">Política de Privacidade</a>.
+        </span>
+      </div>
+
+      <div class="cookie-actions">
+        <button class="btn secondary small" type="button" id="cookieDecline">Recusar</button>
+        <button class="btn small" type="button" id="cookieAccept">Aceitar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEWSLETTER POPUP (SLIDE-IN) -->
+  <div class="newsletter-popup" id="newsletterPopup" aria-hidden="true">
+    <div class="newsletter-card">
+      <button class="newsletter-close" type="button" id="newsletterClose" aria-label="Fechar">×</button>
+
+      <h3 class="h3" style="margin:0 0 6px;">Newsletter <span class="accent">FM Afro</span></h3>
+      <p class="note" style="margin:0 0 12px;">
+        Recebe novidades, eventos e destaques no teu e-mail.
+      </p>
+
+      <form class="form" id="newsletter-form">
+        <input class="input" type="email" id="newsletterEmail" placeholder="O teu e-mail" required>
+
+        <label class="newsletter-consent">
+          <input type="checkbox" id="newsletterConsent" required>
+          <span>
+            Li e aceito os
+            <a href="termos.html" target="_blank" rel="noopener">Termos & Condições</a>
+            e a
+            <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.
+          </span>
+        </label>
+
+        <button class="btn small" type="submit">Subscrever</button>
+        <div class="note mt" id="newsletter-result"></div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
